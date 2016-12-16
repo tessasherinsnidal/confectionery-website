@@ -114,6 +114,10 @@ main {
   background-image: linear-gradient(to top, rgba(101, 176, 237, 1), rgba(101, 176, 237, 0));
 }
 
+.banner-text {
+  color: #fff;
+}
+
 section {
   background-color: #f8f0d9;
   border-radius: 8px;
@@ -150,7 +154,7 @@ section {
 }
 
 th {
-  color: #63cc79;
+  color: #663434;
 }
 
 th, td {
