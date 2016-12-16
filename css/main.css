@@ -7,7 +7,7 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: "Pacifico", cursive;
+  font-family: Pacifico, cursive;
   text-decoration: underline;
 }
 
@@ -28,6 +28,10 @@ body {
   background-color: rgba(255, 255, 255, .5);
 }
 
+nav a {
+  color: #dc498a;
+  text-decoration: none;
+}
 
 header a:hover {
   transition: 150ms ease-out;
@@ -77,7 +81,7 @@ main {
 }
 
 .nav-check:checked ~ .nav-label {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, .5);
 }
 
 .nav-open,
@@ -96,11 +100,6 @@ main {
 
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
-}
-
-nav a {
-  color: #dc498a;
-  text-decoration: none;
 }
 
 .banner {
@@ -128,7 +127,7 @@ section {
 .btn {
   margin: auto;
   cursor: pointer;
-  border: #65B0ed 1px solid;
+  border: #65b0ed 1px solid;
   color: #fff;
   background-color: #65b0ed;
 }
@@ -140,7 +139,7 @@ section {
   border-color: #dc498a;
 }
 
-.btn:focus  {
+.btn:focus {
   background-color: #fff;
   border-color: #dc498a;
   color: #dc498a;
