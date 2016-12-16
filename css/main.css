@@ -28,28 +28,96 @@ body {
   background-color: rgba(255, 255, 255, .5);
 }
 
+
+header a:hover {
+  transition: 150ms ease-out;
+  color: #65b0ed;
+}
+
+main {
+  overflow: hidden;
+}
+
+.navi {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+  font-size: .75rem;
+  margin-top: 1.75%;
+}
+
+.nav-check:checked ~ .navi {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-open {
+  padding-bottom: 90px;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 25px;
+  position: absolute;
+  right: 5px;
+  top: 17px;
+}
+
+.nav-label:hover {
+  width: 30px;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
 nav a {
   color: #dc498a;
   text-decoration: none;
 }
 
-ol li {
-  border: #dc498a 2px solid;
-  background-color: rgba(220, 73, 138, .25);
-  border-radius: 8px;
+.banner {
+  position: relative;
 }
 
-.banner {
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
   background-image: linear-gradient(to top, rgba(101, 176, 237, 1), rgba(101, 176, 237, 0));
 }
 
 section {
   background-color: #f8f0d9;
   border-radius: 8px;
-}
-
-iframe {
-  max-height: 200px;
 }
 
 .img-flex {
@@ -61,9 +129,56 @@ iframe {
   margin: auto;
   cursor: pointer;
   border: #65B0ed 1px solid;
-  color: #Dc498a
+  color: #fff;
+  background-color: #65b0ed;
+}
+
+.btn:hover {
+  transition: 150ms ease-out;
+  background-color: #fff;
+  color: #dc498a;
+  border-color: #dc498a;
+}
+
+.btn:focus  {
+  background-color: #fff;
+  border-color: #dc498a;
+  color: #dc498a;
 }
 
 .icon {
   max-width: 50px;
+}
+
+th {
+  color: #63cc79;
+}
+
+th, td {
+  border-color: #63cc79;
+}
+
+footer {
+  background-color: #65b0ed;
+  color: #fff;
+}
+
+.btm-nav {
+  margin: auto;
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav li {
+    display: inline-block;
+  }
+
+  .navi {
+    display: block;
+  }
+
+  .nav-label, .nav-check, .nav-open, .nav-close {
+    display: none;
+  }
+
 }
