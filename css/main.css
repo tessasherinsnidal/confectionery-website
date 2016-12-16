@@ -1,5 +1,5 @@
 html {
-  font-family: Verdana,sans-serif;
+  font-family: Verdana, sans-serif;
   background-image: url("../images/black-forest.svg");
   background-size: 40px auto;
   background-repeat: repeat;
@@ -8,10 +8,19 @@ html {
 
 h1, h2, h3 {
   font-family: "Pacifico", cursive;
+  text-decoration: underline;
 }
 
-.masthead {
-  background-image: linear-gradient(to top, rgba(101, 176, 237, 1), white);
+h2 {
+  color: #c57bdb;
+}
+
+h3 {
+  color: #65b0ed;
+}
+
+header {
+  background-color: #f8f0d9;
   color: #663434;
 }
 
@@ -19,7 +28,42 @@ body {
   background-color: rgba(255, 255, 255, .5);
 }
 
-section {
-  background-color: #fff;
+nav a {
+  color: #dc498a;
+  text-decoration: none;
+}
+
+ol li {
+  border: #dc498a 2px solid;
+  background-color: rgba(220, 73, 138, .25);
   border-radius: 8px;
+}
+
+.banner {
+  background-image: linear-gradient(to top, rgba(101, 176, 237, 1), rgba(101, 176, 237, 0));
+}
+
+section {
+  background-color: #f8f0d9;
+  border-radius: 8px;
+}
+
+iframe {
+  max-height: 200px;
+}
+
+.img-flex {
+  max-width: 15em;
+  margin: auto;
+}
+
+.btn {
+  margin: auto;
+  cursor: pointer;
+  border: #65B0ed 1px solid;
+  color: #Dc498a
+}
+
+.icon {
+  max-width: 50px;
 }
