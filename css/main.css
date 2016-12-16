@@ -1,21 +1,22 @@
 html {
   font-family: Verdana,sans-serif;
-  background-image: url("../images/black-forest.svg"), url("../images/red-velvet"), url("../images/vanilla-frost");
+  background-image: url("../images/black-forest.svg");
   background-size: 40px auto;
   background-repeat: repeat;
   background-color: #bea586;
 }
 
 h1, h2, h3 {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
+
 .masthead {
-  background-image: linear-gradient(to top, rgba(101,176,237,1), white);
+  background-image: linear-gradient(to top, rgba(101, 176, 237, 1), white);
   color: #663434;
 }
 
 body {
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, .5);
 }
 
 section {
